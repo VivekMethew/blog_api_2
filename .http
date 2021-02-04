@@ -1,0 +1,86 @@
+
+GET http://localhost:5000/users
+content-type: application/json
+
+###
+GET http://localhost:5000/users/60157097c15f452a7c584a19
+content-type: application/json
+
+
+### craete a user
+POST  http://localhost:5000/users
+content-type: application/json
+
+{
+    "fname": "preeti",
+    "lname": "pandey",
+    "email": "pp8843512@gmail.com",
+    "phone": "70117309341"
+}
+
+### update user
+PATCH  http://localhost:5000/users/601587c518d19c262cd28812
+content-type: application/json
+
+{
+    "fname":"dummy",
+    "lname":"users",
+    "email":"dummy.users@tech.com",
+    "phone":"xxxxxxxxxx"
+}
+
+### delete user
+DELETE http://localhost:5000/users/60157097c15f452a7c584a19
+content-type: application/json
+
+### test routes
+GET http://localhost:5000/test?userid=54544578&name=vivek kumar&phone=971846885
+content-type: application/application/json
+
+###
+POST http://localhost:5000/profile
+
+
+###blogs routes
+GET http://localhost:5000/blogs
+Content-Type: application/json
+
+###
+GET http://localhost:5000/blogs/601b8b162e3489526075a2e4
+Content-Type: application/json
+
+### create blogs
+POST http://localhost:5000/blogs
+Content-Type: application/json
+
+{
+    "title":"this dummy title",
+    "author":"author",
+    "description":"desription",
+    "urls":"urls"
+}
+
+
+###
+PATCH  http://localhost:5000/blogs/601b8b162e3489526075a2e4
+Content-Type: application/json
+
+{
+    "title":"this dummy title",
+    "author":"author",
+    "description":"desription",
+    "urls":"https://static.toiimg.com/thumb/msid-24245804,width-748,height-499,resizemode=4,imgsize-113353/.jpg"
+}
+
+###
+DELETE   http://localhost:5000/blogs/601b8ab12e3489526075a2e3
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
